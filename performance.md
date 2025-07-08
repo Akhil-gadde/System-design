@@ -75,5 +75,32 @@ In buffer storage.
 
 **Disk Latency**
 
+Normalization: It is the management of data base to reduce the redundancy and maintain data integrity.
+Ex: using relations with foreign keys in tables.
+
+It is always better to read data in sequential fashion than random fashion
+Ex: there is a cost associated for a disk seek,
+so in terms of sequential read, there will be a single disk seek, reducing the disk latency by many folds.
+
+
+
+**CPU Latency**
+
+* Context switching
+it can affect a lot for the latency
+For a multithread OS, 
+when there are two processes, after the process 1 completed, state of completion will be save in PCB1 and then the state will be restored from PCB2
+This will result in wastage of time.
+
+
+Ways to reduce context switching
+* Efficient algorithms and Efficient Queries
+* Batch IO(grouping different read or write IO operations can reduce context switching) and Async IO( IO of logging can be asynchronous, it can be added to another thread)
+* Single Threaded model(Not clear)
+* Thread pool size should be simple-> when there is a large thread pool, the CPU do a lot of context switching which affect latency.
+* 
+
+
+
 
 

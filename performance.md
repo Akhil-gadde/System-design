@@ -44,3 +44,36 @@ Performance Measurement Metric
   2. Desired- Efficient utilzation of all system resources.
 * Tail latency- It is the percentage of requests(say 1-5 percentile) having the latency greater than a specific latency. Such a latency is called tail latency.
 <img src="https://github.com/user-attachments/assets/f8e7a34d-8d2f-4ed5-ad02-acf3d9023df4" width="400" height="300" />
+
+
+
+**Network Latency**
+TCP - Transmission control protocol is the basic protocol to transfer data in segments between two networks.
+
+It uses a 3-way handshake for the network establishment and the segments are numbered for the receiver to rearrange them correctly.
+
+SSL/TLS connection
+it is security layer over the TCP.
+HTTPS uses this layer.
+
+**Memory Access Latency**
+1. Finite Head memory
+2. Large Heap memory
+3. GC Algorithm
+4. Finite buffer memory in the database(any rewrite happens using this buffer memory).
+
+
+Things to check
+1. Avoid Memory Bloat
+2. Weak/soft References(Ex: this reference tells the Garbage collector to prioritize its collection in case of unusage)
+3. Multiple smaller Processes(this is better than a single big process)
+4. Garbage Collection Algorithm( suitable algo for live process and batch process.
+
+In buffer storage.
+* Normalization
+* Compute over storage
+
+**Disk Latency**
+
+
+
